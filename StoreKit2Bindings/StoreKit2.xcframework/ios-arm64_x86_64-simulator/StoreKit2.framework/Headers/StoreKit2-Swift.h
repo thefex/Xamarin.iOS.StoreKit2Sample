@@ -255,7 +255,7 @@ using UInt = size_t;
 
 SWIFT_CLASS("_TtC9StoreKit216StoreKitAppStore")
 @interface StoreKitAppStore : NSObject
-- (void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -524,7 +524,7 @@ using UInt = size_t;
 
 SWIFT_CLASS("_TtC9StoreKit216StoreKitAppStore")
 @interface StoreKitAppStore : NSObject
-- (void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
++ (void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

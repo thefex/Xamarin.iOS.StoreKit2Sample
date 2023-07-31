@@ -44,11 +44,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@StoreKit2@objc(cs)StoreKitAppStore(im)showManageSubscriptionsIn:completionHandler:",
-            "mangledName": "$s9StoreKit20a6KitAppA0C23showManageSubscriptions2inySo13UIWindowSceneC_tYaKF",
+            "usr": "c:@M@StoreKit2@objc(cs)StoreKitAppStore(cm)showManageSubscriptionsIn:completionHandler:",
+            "mangledName": "$s9StoreKit20a6KitAppA0C23showManageSubscriptions2inySo13UIWindowSceneC_tYaKFZ",
             "moduleName": "StoreKit2",
+            "static": true,
             "objc_name": "showManageSubscriptionsIn:completionHandler:",
             "declAttributes": [
+              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -87,6 +89,7 @@
         "mangledName": "$s9StoreKit20a6KitAppA0C",
         "moduleName": "StoreKit2",
         "declAttributes": [
+          "Final",
           "AccessControl",
           "ObjC"
         ],

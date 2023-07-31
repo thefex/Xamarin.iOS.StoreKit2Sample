@@ -6,12 +6,15 @@ using UIKit;
 namespace StoreKit2Bindings
 {
 
-    // @interface StoreKitAppStore : NSObject
+
+// @interface StoreKitAppStore : NSObject
     [BaseType (typeof(NSObject), Name = "_TtC9StoreKit216StoreKitAppStore")]
     interface StoreKitAppStore
     {
-        // -(void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+        // +(void)showManageSubscriptionsIn:(UIWindowScene * _Nonnull)scene completionHandler:(void (^ _Nonnull)(NSError * _Nullable))completionHandler;
+        [Static]
         [Export ("showManageSubscriptionsIn:completionHandler:")]
         void ShowManageSubscriptionsIn (UIWindowScene scene, Action<NSError> completionHandler);
-    } 
+    }
+
 }

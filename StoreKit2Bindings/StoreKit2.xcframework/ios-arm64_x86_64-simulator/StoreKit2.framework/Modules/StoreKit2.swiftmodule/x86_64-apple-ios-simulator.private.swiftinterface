@@ -8,9 +8,9 @@ import StoreKit
 import Swift
 import _Concurrency
 import _StringProcessing
-@_inheritsConvenienceInitializers @objc public class StoreKitAppStore : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc final public class StoreKitAppStore : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $AsyncAwait
-  @objc public func showManageSubscriptions(in scene: UIKit.UIWindowScene) async throws
+  @objc public static func showManageSubscriptions(in scene: UIKit.UIWindowScene) async throws
   #endif
   @objc override dynamic public init()
   @objc deinit

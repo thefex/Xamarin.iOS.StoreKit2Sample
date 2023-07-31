@@ -8,9 +8,9 @@
 import Foundation
 import StoreKit;
 
-@objc public class StoreKitAppStore : NSObject
+@objc public final class StoreKitAppStore : NSObject
 {
-    @objc public func showManageSubscriptions(in scene: UIWindowScene) async throws {
+    @objc public static func showManageSubscriptions(in scene: UIWindowScene) async throws {
         try await AppStore.showManageSubscriptions(in: scene)
     }
 }

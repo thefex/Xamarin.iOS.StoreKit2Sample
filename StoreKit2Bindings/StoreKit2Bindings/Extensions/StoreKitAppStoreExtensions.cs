@@ -11,7 +11,7 @@ namespace StoreKit2Bindings.Extensions
         {
             var tcs = new TaskCompletionSource<NSError>();
 
-            storeKitAppStore.ShowManageSubscriptionsIn(scene, error =>
+            StoreKitAppStore.ShowManageSubscriptionsIn(scene, error =>
             {
                 tcs.TrySetResult(error);
             });
