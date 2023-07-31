@@ -20,4 +20,12 @@ https://github.com/xamarin/xamarin-macios/blob/main/Make.config#L234C1-L235C1
 sharpie bind ..../Release-iphoneos/StoreKit2.framework/Headers/StoreKit2-Swift.h --sdk iphoneos16.2
 
 # Copy this to Xamarin bindings project (see sample attached)
-Build & enjoy
+
+# Generate and consume nuget package
+Take a look at .nuspec and .target file.
+This is required so .xcframework is properly included in your iOS project.
+
+# Notes
+There is Xamarin iOS bug that prevents async swift methods working on simulator. 
+It works on real device though which is enough for StoreKit.
+https://github.com/xamarin/xamarin-macios/issues/18562

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>StoreKit2Bindings.ShowManageSubscriptions</id>
+        <version>1.0.0</version>
+        <title>StoreKit2Bindings.ShowManageSubscriptions</title>
+        <authors>Przemysław Raciborski [thefex]</authors>
+        <projectUrl>https://github.com/thefex/Xamarin.iOS.StoreKit2Sample</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Bindings for StoreKit2 showManageSubscriptions method.</description>
+        <dependencies>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="../Bindings/bin/Release/StoreKit2Bindings.dll" target="lib/Xamarin.iOS10/StoreKit2Bindings.dll" />
+        <file src="../Bindings/bin/Release/StoreKit2Bindings.pdb" target="lib/Xamarin.iOS10/StoreKit2Bindings.pdb" />
+        <file src="../Bindings/StoreKit2Bindings.ShowManageSubscriptions.targets" target="build/StoreKit2Bindings.ShowManageSubscriptions.targets" />
+
+        <file src="../Bindings/bin/Release/StoreKit2Bindings.resources/**" target="StoreKit2/" />
+    </files>
+</package>

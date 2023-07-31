@@ -7,7 +7,7 @@ namespace StoreKit2Bindings.Extensions
 {
     public static class StoreKitAppStoreExtensions
     { 
-        public static Task<NSError> ShowManageSubscriptionsIn(this StoreKitAppStore storeKitAppStore, UIWindowScene scene)
+        public static Task<NSError> ShowManageSubscriptionsIn(UIWindowScene scene)
         {
             var tcs = new TaskCompletionSource<NSError>();
 

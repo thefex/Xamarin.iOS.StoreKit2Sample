@@ -8,7 +8,9 @@
         <OutputType>Library</OutputType>
         <RootNamespace>StoreKit2Bindings</RootNamespace>
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-        <AssemblyName>StoreKit2Bindings</AssemblyName>
+        <AssemblyName>StoreKit2Bindings</AssemblyName>  
+        <NoBindingEmbedding>true</NoBindingEmbedding>
+        <CompressBindingResourcePackage>true</CompressBindingResourcePackage>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugSymbols>true</DebugSymbols>
@@ -29,6 +31,14 @@
         <WarningLevel>4</WarningLevel>
         <ConsolePause>false</ConsolePause>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+      <OutputPath>bin\iPhoneSimulator\Debug\</OutputPath>
+      <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+      <OutputPath>bin\iPhone\Debug\</OutputPath>
+      <PlatformTarget>AnyCPU</PlatformTarget>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />

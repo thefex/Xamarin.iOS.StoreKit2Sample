@@ -1,0 +1,28 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="BeforeCompile">
+        <Message Text="START" Importance="high"/>
+        <ItemGroup>
+            <BindingResources Include="$(MSBuildThisFileDirectory)/../StoreKit2/**/*.*" />
+        </ItemGroup>
+        <Message Text="$(MSBuildThisFileDirectory)" Importance="High"/>
+        <Message Text="BindingResources: @(BindingResources)" Importance="high" />
+
+        <Copy SourceFiles="@(BindingResources)" DestinationFolder="$(TargetDir)/StoreKit2Bindings.resources/%(RecursiveDir)" ContinueOnError="false" />
+        <ItemGroup>
+            <NativeReference Include="$(TargetDir)/StoreKit2Bindings.resources/StoreKit2.xcframework">
+                <Kind>Framework</Kind>
+                <SmartLink>False</SmartLink>
+            </NativeReference>
+        </ItemGroup>
+    </Target>
+  
+    <Target Name="CreateMtouchExtraArgs" AfterTargets="_DetectSdkLocations">
+        <PropertyGroup>
+            <XCodeLinkingSpecificDirectoryPlatform Condition="'$(Platform)' == 'iPhone'">iphoneos</XCodeLinkingSpecificDirectoryPlatform>
+            <XCodeLinkingSpecificDirectoryPlatform Condition="'$(Platform)' == 'iPhoneSimulator'">iphonesimulator</XCodeLinkingSpecificDirectoryPlatform>
+            <MtouchExtraArgs>$(MtouchExtraArgs) -gcc_flags "-L /usr/lib/swift -L $(_SdkDevPath)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(XCodeLinkingSpecificDirectoryPlatform)"</MtouchExtraArgs>
+            <_BundlerArguments Condition="'$(_PlatformName)' != 'macOS'">$(MtouchExtraArgs)</_BundlerArguments>
+        </PropertyGroup>
+        <Message Importance="high" Text="MtouchExtraArgs is $(MtouchExtraArgs)" />
+    </Target>
+</Project>
