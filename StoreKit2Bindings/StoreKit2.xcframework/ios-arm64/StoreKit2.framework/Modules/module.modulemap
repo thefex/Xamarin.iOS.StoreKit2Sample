@@ -1,0 +1,11 @@
+framework module StoreKit2 {
+  umbrella header "StoreKit2.h"
+
+  export *
+  module * { export * }
+}
+
+module StoreKit2.Swift {
+  header "StoreKit2-Swift.h"
+  requires objc
+}
