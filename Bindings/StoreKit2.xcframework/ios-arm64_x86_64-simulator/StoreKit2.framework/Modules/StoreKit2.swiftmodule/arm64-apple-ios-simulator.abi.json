@@ -149,6 +149,165 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StoreKit2",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StoreKit2"
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "StoreKit2"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StoreKitTransaction",
+        "printedName": "StoreKitTransaction",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "beginRefundRequest",
+            "printedName": "beginRefundRequest(for:in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt64",
+                "printedName": "Swift.UInt64",
+                "usr": "s:s6UInt64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindowScene",
+                "printedName": "UIKit.UIWindowScene",
+                "usr": "c:objc(cs)UIWindowScene"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StoreKit2@objc(cs)StoreKitTransaction(cm)beginRefundRequestFor:in:completionHandler:",
+            "mangledName": "$s9StoreKit20A14KitTransactionC18beginRefundRequest3for2inys6UInt64V_So13UIWindowSceneCtYaKFZ",
+            "moduleName": "StoreKit2",
+            "static": true,
+            "objc_name": "beginRefundRequestFor:in:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StoreKitTransaction",
+                "printedName": "StoreKit2.StoreKitTransaction",
+                "usr": "c:@M@StoreKit2@objc(cs)StoreKitTransaction"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@StoreKit2@objc(cs)StoreKitTransaction(im)init",
+            "mangledName": "$s9StoreKit20A14KitTransactionCACycfc",
+            "moduleName": "StoreKit2",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@StoreKit2@objc(cs)StoreKitTransaction",
+        "mangledName": "$s9StoreKit20A14KitTransactionC",
+        "moduleName": "StoreKit2",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8

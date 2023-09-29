@@ -83,7 +83,7 @@
         <Folder Include="Resources\" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="StoreKit2Bindings.ShowManageSubscriptions" Version="1.0.0" />
+      <PackageReference Include="StoreKit2Bindings.ShowManageSubscriptions" Version="1.0.2" />
     </ItemGroup> 
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

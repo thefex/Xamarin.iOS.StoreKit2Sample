@@ -49,6 +49,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Extensions\StoreKitAppStoreExtensions.cs" />
+        <Compile Include="Extensions\StoreKitTransactionExtensions.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

@@ -42,7 +42,7 @@ namespace TestProject
 
             button.TouchUpInside += async (e, a) =>
             {
-                var response = await StoreKitAppStoreExtensions.ShowManageSubscriptionsIn(View.Window.WindowScene);
+                var response = await StoreKitTransactionExtensions.BeginRefundRequestFor(123123, View.Window.WindowScene);
                 var z = response;
                 //  if (response != null)
                 //  {

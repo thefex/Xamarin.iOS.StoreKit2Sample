@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		9E4E59D92A77E1F50089A446 /* StoreKit2.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4E59D82A77E1F50089A446 /* StoreKit2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E4E59E42A77E2BD0089A446 /* AppStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E59E32A77E2BD0089A446 /* AppStoreManager.swift */; };
+		9EB898E42AC73C680061A99B /* StoreKitTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB898E32AC73C680061A99B /* StoreKitTransaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E4E59D52A77E1F50089A446 /* StoreKit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoreKit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4E59D82A77E1F50089A446 /* StoreKit2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreKit2.h; sourceTree = "<group>"; };
 		9E4E59E32A77E2BD0089A446 /* AppStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreManager.swift; sourceTree = "<group>"; };
+		9EB898E32AC73C680061A99B /* StoreKitTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitTransaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			children = (
 				9E4E59D82A77E1F50089A446 /* StoreKit2.h */,
 				9E4E59E32A77E2BD0089A446 /* AppStoreManager.swift */,
+				9EB898E32AC73C680061A99B /* StoreKitTransaction.swift */,
 			);
 			path = StoreKit2;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4E59E42A77E2BD0089A446 /* AppStoreManager.swift in Sources */,
+				9EB898E42AC73C680061A99B /* StoreKitTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

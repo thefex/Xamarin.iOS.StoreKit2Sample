@@ -1,16 +1,24 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StoreKit2
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import StoreKit
 @_exported import StoreKit2
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 @_inheritsConvenienceInitializers @objc final public class StoreKitAppStore : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $AsyncAwait
   @objc public static func showManageSubscriptions(in scene: UIKit.UIWindowScene) async throws
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class StoreKitTransaction : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public static func beginRefundRequest(for transactionId: Swift.UInt64, in scene: UIKit.UIWindowScene) async throws
   #endif
   @objc override dynamic public init()
   @objc deinit
